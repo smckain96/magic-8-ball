@@ -18,8 +18,11 @@ class Ask8BallForm extends Component {
         <div className="eight-ball-form">
           <form onSubmit={ this.props.handleSubmit(this.askThe8Ball) }>
             <div>
-              <label htmlFor="title">Ask The 8 Ball: &nbsp;</label>
+              <label htmlFor="ask">Ask The 8 Ball: &nbsp;</label>
               <Field className="form-control" name="question" component="input" type="text"/>
+              <button type="submit" className="btn btn-primary">
+                Ask away!
+              </button>
             </div>
           </form>
         </div>

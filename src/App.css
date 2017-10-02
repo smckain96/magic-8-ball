@@ -17,9 +17,24 @@ body {
 .eight-ball-form {
   width:50%;
   padding:20px;
+  display:flex;
 }
 
 label {
   font-size:40px;
   width:inherit;
+}
+
+button {
+  padding: 10px 20px;
+  border: 5px solid black;
+  background-color:#C9E4FE;
+  font-weight:400;
+  border-radius:25px;
+  margin:5px;
+}
+
+button:hover {
+  background-color:#54A9FE;
+  font-weight:900;
 }
