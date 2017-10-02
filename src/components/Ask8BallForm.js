@@ -6,14 +6,14 @@ import { magic8Ball } from '../actions/magic8Ball';
 
 class Ask8BallForm extends Component {
   askThe8Ball(question) {
-    this.props.magic8Ball(question)
+    console.log(magic8Ball(question))
   }
 
   render() {
     return (
       <div>
         <div className="eight-ball-image">
-          <img src="https://i.imgflip.com/1c8tfl.jpg"/>
+          <img src="https://i.imgflip.com/1c8tfl.jpg" alt="aaaaa"/>
         </div>
         <div className="eight-ball-form">
           <form onSubmit={ this.props.handleSubmit(this.askThe8Ball) }>
